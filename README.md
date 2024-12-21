@@ -58,21 +58,21 @@ grep --color=auto "pets" example.txt
 Конечно же, grep имеет намного больше возможностей, поэтому эту команду часто используют в bash-скриптах для автоматизации задач. 
 Создайте файл `orders.txt` со следующим содержимым:
 ```
-Order ID: 1001 | Customer: John Doe | Item: Book | Total: $120 | Date: 2024-12-01
-Order ID: 1002 | Customer: Jane Smith | Item: Pen | Total: $12 | Date: 2024-12-02
-Order ID: 1003 | Customer: Emily Johnson | Item: Notebook | Total: $25 | Date: 2024-12-02
-Order ID: 1004 | Customer: Michael Brown | Item: Backpack | Total: $50 | Date: 2024-12-03
-Order ID: 1005 | Customer: Chris Davis | Item: Marker | Total: $200 | Date: 2024-12-03
-Order ID: 1006 | Customer: Patricia Wilson | Item: Book | Total: $30 | Date: 2024-12-04
-Order ID: 1007 | Customer: Daniel Garcia | Item: Chair | Total: $300 | Date: 2024-12-05
-Order ID: 1008 | Customer: Sarah Martinez | Item: Desk | Total: $250 | Date: 2024-12-05
-Order ID: 1009 | Customer: Kevin Lee | Item: Lamp | Total: $45 | Date: 2024-12-06
-Order ID: 1010 | Customer: Laura Kim | Item: Table | Total: $150 | Date: 2024-12-07
-Order ID: 1011 | Customer: Brian Scott | Item: Chair | Total: $100 | Date: 2024-12-08
-Order ID: 1012 | Customer: Angela Wright | Item: Shelf | Total: $75 | Date: 2024-12-09
-Order ID: 1013 | Customer: George Adams | Item: Notebook | Total: $40 | Date: 2024-12-10
-Order ID: 1014 | Customer: Emma Stone | Item: Pen | Total: $20 | Date: 2024-12-11
-Order ID: 1015 | Customer: Olivia Johnson | Item: Backpack | Total: $60 | Date: 2024-12-12
+Order ID: 1001 | Customer: John Doe | Item: Book | Total: 120$ | Date: 2024-12-01
+Order ID: 1002 | Customer: Jane Smith | Item: Pen | Total: 12$ | Date: 2024-12-02
+Order ID: 1003 | Customer: Emily Johnson | Item: Notebook | Total: 25$ | Date: 2024-12-02
+Order ID: 1004 | Customer: Michael Brown | Item: Backpack | Total: 50$ | Date: 2024-12-03
+Order ID: 1005 | Customer: Chris Davis | Item: Marker | Total: 200$ | Date: 2024-12-03
+Order ID: 1006 | Customer: Patricia Wilson | Item: Book | Total: 30$ | Date: 2024-12-04
+Order ID: 1007 | Customer: Daniel Garcia | Item: Chair | Total: 300$ | Date: 2024-12-05
+Order ID: 1008 | Customer: Sarah Martinez | Item: Desk | Total: 250$ | Date: 2024-12-05
+Order ID: 1009 | Customer: Kevin Lee | Item: Lamp | Total: 45$ | Date: 2024-12-06
+Order ID: 1010 | Customer: Laura Kim | Item: Table | Total: 150$ | Date: 2024-12-07
+Order ID: 1011 | Customer: Brian Scott | Item: Chair | Total: 100$ | Date: 2024-12-08
+Order ID: 1012 | Customer: Angela Wright | Item: Shelf | Total: 75$ | Date: 2024-12-09
+Order ID: 1013 | Customer: George Adams | Item: Notebook | Total: 40$ | Date: 2024-12-10
+Order ID: 1014 | Customer: Emma Stone | Item: Pen | Total: 20$ | Date: 2024-12-11
+Order ID: 1015 | Customer: Olivia Johnson | Item: Backpack | Total: 60$ | Date: 2024-12-12
 ```
 Создайте скрипт process_orders.sh, который выполняет следующие задачи:
 1. Найдите все заказы, в которых общая сумма (`Total`) равна или превышает $100, и сохраните их в файл `high_value_orders.txt`.
